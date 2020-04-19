@@ -44,10 +44,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-      - run: cd $GITHUB_WORKSPACE
-      - run: npm install
-      - run: npm run format
-      - run: npm run lint
-      - run: npm test
-      - run: npm run build
+        - run: cd $GITHUB_WORKSPACE
+        - run: npm install
+        - run: npm run format
+        - run: npm run lint
+        - run: npm test
+        - run: npm run build
 
