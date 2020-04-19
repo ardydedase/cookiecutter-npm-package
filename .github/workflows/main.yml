@@ -40,10 +40,13 @@ jobs:
       uses: actions/setup-node@v1
 
     # Runs a set of commands using the runners shell
-    - name: Install npm packages and run scripts
+    - name: Install npm packages
       run: |
         cd my-npm-package
         npm install
+
+    - name: Run npm scripts
+      run: |
         npm run format
         npm run lint
         npm test
