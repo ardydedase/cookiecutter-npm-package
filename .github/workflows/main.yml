@@ -40,14 +40,14 @@ jobs:
     - name: Cookiecut the template
       run: cookiecutter $GITHUB_WORKSPACE --no-input
 
-    - name: Run npm scripts
-      uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-        - run: cd $GITHUB_WORKSPACE
-        - run: npm install
-        - run: npm run format
-        - run: npm run lint
-        - run: npm test
-        - run: npm run build
+    # - name: Run npm scripts
+    #   uses: actions/setup-node@v1
+    #   with:
+    #     node-version: '10.19.0'
+    #   - run: cd $GITHUB_WORKSPACE
+    #   - run: npm install
+    #   - run: npm run format
+    #   - run: npm run lint
+    #   - run: npm test
+    #   - run: npm run build
 
