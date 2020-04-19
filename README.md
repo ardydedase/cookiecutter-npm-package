@@ -54,9 +54,7 @@ Project template for building publicly available npm packages in Typescript (for
 
 Inside the generated folder, run the following commands:
 
-1. If you don't have an npm account, create one on: https://www.npmjs.com/signup or run the command:
-
-        npm adduser
+1. If you don't have an npm account, create one on: https://www.npmjs.com/signup or run the command: `npm adduser`
 
 1. If you already have an account, login by running the following command:
 
@@ -65,3 +63,5 @@ Inside the generated folder, run the following commands:
 1. When you're successfully logged-in. Publish the package:
 
         npm publish
+
+1. You should now be able to `npm install` your published package. There is an npm package called [reference-package](https://www.npmjs.com/package/reference-package) which is generated from this cookiecutter. There is a sample usage in [example/index.js](example/index.js).
