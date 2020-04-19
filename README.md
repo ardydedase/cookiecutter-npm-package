@@ -19,9 +19,9 @@ Project template for building publicly available npm packages in Typescript (for
 
 1. Cookie cut the template.
 
-        cookiecutter <template URL here>
+        cookiecutter git@github.com:ardydedase/cookiecutter-npm-package.git
 
-1. Enter the values accordingly. Pick a unique project name, it will be used as your npm package name.
+1. Enter the values accordingly. Pick a unique project name, it will be used as your npm package name. You can check if the package name is available in https://www.npmjs.com/.
 
 
 1. Change the working directory to the generated folder.
