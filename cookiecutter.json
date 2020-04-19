@@ -1,7 +1,7 @@
 {
 	"github_username": "ardydedase",
-	"project_name": "my npm package",
+	"project_name": "reference package",
 	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-	"project_short_description": "My npm package.",
+	"project_short_description": "My reference npm package.",
 	"version": "0.1.0"
 }
