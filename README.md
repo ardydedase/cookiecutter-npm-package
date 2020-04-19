@@ -65,3 +65,7 @@ Inside the generated folder, run the following commands:
         npm publish
 
 1. You should now be able to `npm install` your published package. There is an npm package called [reference-package](https://www.npmjs.com/package/reference-package) which is generated from this cookiecutter. There is a sample usage in [example/index.js](example/index.js).
+
+## Credits
+
+This cookiecutter template is originally based on this guide though slightly modified to my own preferences: https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c
