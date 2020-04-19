@@ -1,0 +1,44 @@
+{
+  "name": "{{cookiecutter.project_slug}}",
+  "version": "{{cookiecutter.version}}",
+  "description": "{{cookiecutter.project_short_description}}",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint src/**",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/issues"
+  },
+  "homepage": "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@typescript-eslint/parser": "^2.28.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+}
