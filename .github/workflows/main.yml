@@ -35,6 +35,8 @@ jobs:
     # Set up a specific version of Python and add the command-line tools to the PATH
     - name: Setup Python and cookiecutter
       uses: actions/setup-python@v1.2.0
+
+    - name: Install cookiecutter
       run: pip install cookiecutter        
 
     - name: Cookiecut the template
