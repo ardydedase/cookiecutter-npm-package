@@ -10,14 +10,15 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  reference-package-directory: ./reference-package
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    env:
-      reference-package-directory: ./reference-package
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -64,7 +65,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm publish
+      - name: Run npm publish
+        working-directory: ${{env.reference-package-directory}}
+        run: |
+          npm ci
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}        
