@@ -24,9 +24,9 @@ Project template for building publicly available npm package.
 1. Enter the values accordingly. Pick a unique project name, it will be used as your npm package name. You can check if the package name is available in https://www.npmjs.com/.
 
 
-1. Change the working directory to the generated folder.
+1. Change the working directory to the generated folder, same name as the project slug.
 
-        cd <my-generated-package>
+        cd <project_slug>
 
 ## Development
 
