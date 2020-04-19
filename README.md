@@ -2,11 +2,11 @@
 
 # Cookiecutter NPM Package
 
-Project template for building publicly available npm packages in Typescript (for now).
+Project template for building publicly available npm package.
 
 ## Specs
 
-- Starter code in Typescript
+- Starter code in Typescript (for now).
 - Tested on:
   - npm 6.13.4
   - node v10.19.0
