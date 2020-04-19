@@ -15,7 +15,7 @@ Project template for building publicly available npm packages in Typescript (for
 
 1. Install cookiecutter
 
-    pip install cookiecutter
+        pip install cookiecutter
 
 1. Cookie cut the template.
 
@@ -30,24 +30,38 @@ Project template for building publicly available npm packages in Typescript (for
 
 ## Development
 
-- Install dependencies
+1. Install dependencies
 
         npm install
 
-- Starter example in `src` folder is a simple function that returns a string.
-- Run build. This will generate the compiled code with type definitions in the `dist` folder.
+ 
+1. Run build. This will generate the compiled code with type definitions in the `dist` folder.
 
         npm run build
 
-- Formatting and linting.
+1. Formatting and linting.
 
         npm run lint
         npm run format
 
-- Run tests
+1. Run tests
 
         npm test
 
+1. Build on top of the starter example in `src` folder is a simple function that returns a string.
+
 ## Publish package
 
-TODO
+Inside the generated folder, run the following commands:
+
+1. If you don't have an npm account, create one on: https://www.npmjs.com/signup or run the command:
+
+        npm adduser
+
+1. If you already have an account, login by running the following command:
+
+        npm login
+
+1. When you're successfully logged-in. Publish the package:
+
+        npm publish
