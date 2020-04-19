@@ -33,7 +33,7 @@ jobs:
         echo test, and deploy your project.
 
     # Set up a specific version of Python and add the command-line tools to the PATH
-    - name: Setup Python and cookiecutter
+    - name: Setup Python
       uses: actions/setup-python@v1.2.0
 
     - name: Install cookiecutter
@@ -42,14 +42,12 @@ jobs:
     - name: Cookiecut the template
       run: cookiecutter $GITHUB_WORKSPACE --no-input
 
-    # - name: Run npm scripts
-    #   uses: actions/setup-node@v1
-    #   with:
-    #     node-version: '10.19.0'
-    #   - run: cd $GITHUB_WORKSPACE
-    #   - run: npm install
-    #   - run: npm run format
-    #   - run: npm run lint
-    #   - run: npm test
-    #   - run: npm run build
+    - name: Setup node
+      uses: actions/setup-node@v1
 
+    - run: cd $GITHUB_WORKSPACE
+    - run: npm install
+    - run: npm run format
+    - run: npm run lint
+    - run: npm test
+    - run: npm run build
