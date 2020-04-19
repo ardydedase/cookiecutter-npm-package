@@ -1,3 +1,5 @@
+![CI](https://github.com/ardydedase/cookiecutter-npm-package/workflows/CI/badge.svg)
+
 # Cookiecutter NPM Package
 
 Project template for building publicly available npm packages in Typescript (for now).
