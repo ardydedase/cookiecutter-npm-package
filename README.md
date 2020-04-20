@@ -4,6 +4,8 @@
 
 Project template for building publicly available npm package.
 
+Medium post: https://medium.com/@wickedmanok/build-and-publish-npm-packages-in-a-few-minutes-17494a30a51f
+
 ## Specs
 
 - Starter code in Typescript (for now).
@@ -27,6 +29,8 @@ Project template for building publicly available npm package.
 1. Change the working directory to the generated folder, same name as the project slug.
 
         cd <project_slug>
+
+There is a sample reference package generated from our cookiecutter which you can refer to in here: https://github.com/ardydedase/reference-package.
 
 ## Development
 
@@ -65,6 +69,7 @@ Inside the generated folder, run the following commands:
         npm publish
 
 1. You should now be able to `npm install` your published package. There is an npm package called [reference-package](https://www.npmjs.com/package/reference-package) which is generated from this cookiecutter. There is a sample usage in [example/index.js](example/index.js).
+
 
 ## Credits
 
