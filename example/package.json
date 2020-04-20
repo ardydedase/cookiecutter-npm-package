@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "reference-package": "^0.1.2"
+    "reference-package": "^0.1.3"
   },
   "devDependencies": {
     "@types/node": "^13.13.0",
