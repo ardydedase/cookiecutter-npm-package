@@ -26,6 +26,7 @@ jobs:
     - name: Run tests
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
+        npm install
         npm test
     - name: Run build
       working-directory: ${{env.GITHUB_WORKSPACE}}
